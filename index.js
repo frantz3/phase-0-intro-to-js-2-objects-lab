@@ -4,27 +4,27 @@ const employee = {
 };
 
 function updateEmployeeWithKeyAndValue(employee, key, value) {
-    var newEmp = {...employee};
+    let newEmp = {...employee};
     newEmp[key] = value;
     return newEmp;
 }
 
 function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value ) {
-    var empl = employee;
+    let empl = employee;
     empl[key] = value;
     return employee
 
     };
 
-function deleteFromEmployeeByKey(employee, key, ) {
-    var emplo = Object.assign({}, emplo);
+function deleteFromEmployeeByKey(employee ) {
+    let emplo = Object.assign({}, emplo);
     delete employee.key;
     return emplo;
 
 }
 
 function destructivelyDeleteFromEmployeeByKey(employee, key, value) {
-    var employ = employee;
+    let employ = employee;
     employ[key] = value;
     return employee
 }
